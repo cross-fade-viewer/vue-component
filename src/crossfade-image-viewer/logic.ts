@@ -16,6 +16,7 @@ interface Data {
 }
 
 export default defineComponent({
+  name: 'CrossFadeViewer',
   components: {
     LayerControl,
     draggable,
