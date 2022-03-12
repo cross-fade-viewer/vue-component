@@ -11,7 +11,7 @@
               @keydown="isControlMenuMinimized = !isControlMenuMinimized"
               class="icon"
               v-bind:class="isControlMenuMinimized ? 'rotated-270' : 'rotated-90'"
-              src="./arrow.svg"
+              src="~@/assets/arrow.svg"
             >
           </div>
           <div class="controls" v-show="isControlMenuMinimized">
@@ -40,7 +40,7 @@
                     <button
                       @click="removeImage(reverseIndexOfArray(index, usedImagesReverse))"
                     >
-                      <img alt="delete icon" src="./close.svg">
+                      <img alt="delete icon" src="~@/assets/close.svg">
                     </button>
                   </div>
                 </template>
@@ -51,7 +51,7 @@
               {{noImageText}}
             </div>
             <div class="opacity-control">
-              <img alt="low opacity icon" src="./opacity-low.svg">
+              <img alt="low opacity icon" src="~@/assets/opacity-low.svg">
               <!-- eslint-disable-next-line vuejs-accessibility/form-control-has-label -->
               <input
                 v-if="selectedLayerIndex !== undefined && usedImages.length"
@@ -64,7 +64,7 @@
               >
               <!-- eslint-disable-next-line vuejs-accessibility/form-control-has-label -->
               <input v-else type="range" min="0" max="1" step="0.01" disabled>
-              <img alt="high opacity icon" src="./opacity-high.svg">
+              <img alt="high opacity icon" src="~@/assets/opacity-high.svg">
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@
     </div>
 
     <button @click="showGallery = !showGallery" v-if="integratedGallery">
-      <img alt="expand icon" v-bind:class="showGallery ? 'rotated' : '' " src="./arrow.svg">
+      <img alt="expand icon" v-bind:class="showGallery ? 'rotated' : '' " src="~@/assets/arrow.svg">
     </button>
     <div class="gallery-container">
       <cross-fade-gallery :images="unusedImages" v-show="showGallery" @useImage="onUseImage"/>
