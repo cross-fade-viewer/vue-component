@@ -11,7 +11,7 @@
               @keydown="isControlMenuMinimized = !isControlMenuMinimized"
               class="icon"
               v-bind:class="isControlMenuMinimized ? 'rotated-270' : 'rotated-90'"
-              src="~@/assets/arrow.svg"
+              src="@/assets/arrow.svg"
             >
           </div>
           <div class="controls" v-show="isControlMenuMinimized">
