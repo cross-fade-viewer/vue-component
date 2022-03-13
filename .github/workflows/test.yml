@@ -47,4 +47,4 @@ jobs:
       
       # Finally, run our tests
       - name: Run Jest tests
-        run: npm test
+        run: npm test:unit
