@@ -5,14 +5,18 @@
         <div class="control-menu">
           <div class="title">
             <div>Layers</div>
-            <img
-              alt="arrow icon"
+            <base-icon
+              iconName="arrow"
+              width="20"
+              height="24"
+              iconColor="white"
               @click="isControlMenuMinimized = !isControlMenuMinimized"
               @keydown="isControlMenuMinimized = !isControlMenuMinimized"
               class="icon"
               v-bind:class="isControlMenuMinimized ? 'rotated-270' : 'rotated-90'"
-              src="./arrow.svg"
             >
+              <arrow-icon />
+            </base-icon>
           </div>
           <div class="controls" v-show="isControlMenuMinimized">
             <div>
@@ -72,7 +76,15 @@
     </div>
 
     <button @click="showGallery = !showGallery" v-if="integratedGallery">
-      <img alt="expand icon" v-bind:class="showGallery ? 'rotated' : '' " src="./arrow.svg">
+      <base-icon
+        iconName="arrow"
+        width="20"
+        height="24"
+        iconColor="white"
+        v-bind:class="showGallery ? 'rotated' : '' "
+      >
+        <arrow-icon />
+      </base-icon>
     </button>
     <div class="gallery-container">
       <cross-fade-gallery :images="unusedImages" v-show="showGallery" @useImage="onUseImage"/>
