@@ -44,7 +44,14 @@
                     <button
                       @click="removeImage(reverseIndexOfArray(index, usedImagesReverse))"
                     >
-                      <img alt="delete icon" src="./close.svg">
+                      <base-icon
+                        iconName="close"
+                        width="24"
+                        height="24"
+                        iconColor="white"
+                      >
+                        <close-icon />
+                      </base-icon>
                     </button>
                   </div>
                 </template>
