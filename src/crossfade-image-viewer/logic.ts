@@ -11,6 +11,7 @@ import ImagePreview from '../ImagePreview.vue';
 import CrossFadeGallery from '../cross-fade-gallery/CrossFadeGallery.vue';
 import BaseIcon from '../BaseIcon.vue';
 import ArrowIcon from '../icons/ArrowIcon.vue';
+import CloseIcon from '../icons/CloseIcon.vue';
 
 interface Data {
   // TODO: Remove warning
@@ -27,6 +28,7 @@ export default defineComponent({
     // icons:
     BaseIcon,
     ArrowIcon,
+    CloseIcon,
   },
   props: {
     availableImages: { type: Array, default: () => [] },
