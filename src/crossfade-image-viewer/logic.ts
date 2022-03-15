@@ -98,8 +98,7 @@ export default defineComponent({
       const newIndex = reverseIndexOfArray(event.moved.newIndex, usedImages.value);
 
       const movedImage = viewer.world.getItemAt(oldIndex);
-      viewer.world.removeItem(movedImage);
-      viewer.world.addItem(movedImage, { index: newIndex });
+      viewer.world.setItemIndex(movedImage, newIndex);
     }
 
     function sliderChanged(event: any) {
