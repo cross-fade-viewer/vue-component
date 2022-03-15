@@ -62,7 +62,14 @@
               {{noImageText}}
             </div>
             <div class="opacity-control">
-              <img alt="low opacity icon" src="./opacity-low.svg">
+              <base-icon
+                width="16"
+                height="20"
+                iconName="opacity-low"
+                iconColor="white"
+              >
+                <opacity-low-icon />
+              </base-icon>
               <!-- eslint-disable-next-line vuejs-accessibility/form-control-has-label -->
               <input
                 v-if="selectedLayerIndex !== undefined && usedImages.length"
@@ -75,7 +82,14 @@
               >
               <!-- eslint-disable-next-line vuejs-accessibility/form-control-has-label -->
               <input v-else type="range" min="0" max="1" step="0.01" disabled>
-              <img alt="high opacity icon" src="./opacity-high.svg">
+              <base-icon
+                width="16"
+                height="20"
+                iconName="opacity-low"
+                iconColor="white"
+              >
+                <opacity-high-icon />
+              </base-icon>
             </div>
           </div>
         </div>

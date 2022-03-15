@@ -12,6 +12,8 @@ import CrossFadeGallery from '../cross-fade-gallery/CrossFadeGallery.vue';
 import BaseIcon from '../BaseIcon.vue';
 import ArrowIcon from '../icons/ArrowIcon.vue';
 import CloseIcon from '../icons/CloseIcon.vue';
+import OpacityHighIcon from '../icons/OpacityHighIcon.vue';
+import OpacityLowIcon from '../icons/OpacityLowIcon.vue';
 
 interface Data {
   // TODO: Remove warning
@@ -29,6 +31,8 @@ export default defineComponent({
     BaseIcon,
     ArrowIcon,
     CloseIcon,
+    OpacityHighIcon,
+    OpacityLowIcon,
   },
   props: {
     availableImages: { type: Array, default: () => [] },
