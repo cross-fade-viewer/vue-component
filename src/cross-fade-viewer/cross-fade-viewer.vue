@@ -5,14 +5,18 @@
         <div class="control-menu">
           <div class="title">
             <div>Layers</div>
-            <img
-              alt="arrow icon"
+            <base-icon
+              iconName="arrow"
+              width="20"
+              height="24"
+              iconColor="white"
               @click="isControlMenuMinimized = !isControlMenuMinimized"
               @keydown="isControlMenuMinimized = !isControlMenuMinimized"
               class="icon"
               v-bind:class="isControlMenuMinimized ? 'rotated-270' : 'rotated-90'"
-              src="@/assets/arrow.svg"
             >
+              <arrow-icon />
+            </base-icon>
           </div>
           <div class="controls" v-show="isControlMenuMinimized">
             <div>
@@ -40,7 +44,14 @@
                     <button
                       @click="removeImage(reverseIndexOfArray(index, usedImagesReverse))"
                     >
-                      <img alt="delete icon" src="~@/assets/close.svg">
+                      <base-icon
+                        iconName="close"
+                        width="24"
+                        height="24"
+                        iconColor="white"
+                      >
+                        <close-icon />
+                      </base-icon>
                     </button>
                   </div>
                 </template>
@@ -51,7 +62,14 @@
               {{noImageText}}
             </div>
             <div class="opacity-control">
-              <img alt="low opacity icon" src="~@/assets/opacity-low.svg">
+              <base-icon
+                width="16"
+                height="20"
+                iconName="opacity-low"
+                iconColor="white"
+              >
+                <opacity-low-icon />
+              </base-icon>
               <!-- eslint-disable-next-line vuejs-accessibility/form-control-has-label -->
               <input
                 v-if="selectedLayerIndex !== undefined && usedImages.length"
@@ -64,7 +82,14 @@
               >
               <!-- eslint-disable-next-line vuejs-accessibility/form-control-has-label -->
               <input v-else type="range" min="0" max="1" step="0.01" disabled>
-              <img alt="high opacity icon" src="~@/assets/opacity-high.svg">
+              <base-icon
+                width="16"
+                height="20"
+                iconName="opacity-low"
+                iconColor="white"
+              >
+                <opacity-high-icon />
+              </base-icon>
             </div>
           </div>
         </div>
@@ -72,7 +97,15 @@
     </div>
 
     <button @click="showGallery = !showGallery" v-if="integratedGallery">
-      <img alt="expand icon" v-bind:class="showGallery ? 'rotated' : '' " src="~@/assets/arrow.svg">
+      <base-icon
+        iconName="arrow"
+        width="20"
+        height="24"
+        iconColor="white"
+        v-bind:class="showGallery ? 'rotated' : '' "
+      >
+        <arrow-icon />
+      </base-icon>
     </button>
     <div class="gallery-container">
       <cross-fade-gallery :images="unusedImages" v-show="showGallery" @useImage="onUseImage"/>
