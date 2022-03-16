@@ -1,6 +1,6 @@
 {
   "name": "@cross-fade-viewer/vue-component",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": false,
   "main": "dist/CrossFadeViewer.umd.js",
   "module": "dist/CrossFadeViewer.common.js",
