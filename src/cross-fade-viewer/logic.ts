@@ -40,8 +40,7 @@ export default defineComponent({
     integratedGallery: { type: Boolean, default: true },
     noImageText: {
       type: String,
-      // TODO: Translate to english and make text more general.
-      default: 'Du hast alle Bildebenen entfernt. Füge neue hinzu, indem du auf das (+) Symbol in der oberen rechten Ecke klickst.',
+      default: 'There are no images to be displayed.',
     },
     themeName: { type: String, default: Theme.base },
   },
