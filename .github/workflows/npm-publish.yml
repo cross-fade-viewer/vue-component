@@ -41,7 +41,7 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm build
+        run: npm run build-package
 
   publish-npm:
     needs: build
@@ -52,7 +52,6 @@ jobs:
         with:
           node-version: 17
           registry-url: https://registry.npmjs.org/
-      - run: npm build
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
