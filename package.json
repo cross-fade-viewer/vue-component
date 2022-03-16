@@ -16,7 +16,7 @@
     "serve": "vue-cli-service serve dev/serve.ts",
     "build": "vue-cli-service build",
     "build-package": "vue-cli-service build --target lib --name CrossFadeViewer ./src/cross-fade-viewer/cross-fade-viewer.vue",
-    "test:unit": "vue-cli-service test:unit",
+    "test:unit": "vue-cli-service test:unit --passWithNoTests",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
