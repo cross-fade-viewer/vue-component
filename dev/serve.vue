@@ -1,13 +1,13 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
-import CrossfadeImageViewer from '@/crossfade-image-viewer/crossfade-image-viewer.vue';
+import CrossFadeViewer from '@/cross-fade-viewer/cross-fade-viewer.vue';
 // import CrossFadeGallery from '@/cross-fade-gallery/CrossFadeGallery.vue';
 import { ImageCollection, Theme } from '@cross-fade-viewer/core';
 
 export default defineComponent({
   name: 'ServeDev',
   components: {
-    CrossfadeImageViewer,
+    CrossFadeViewer,
     // CrossFadeGallery,
   },
   setup() {
@@ -29,7 +29,7 @@ export default defineComponent({
   <div id="app">
     <div class="container center">
       <div class="component">
-        <crossfade-image-viewer
+        <cross-fade-viewer
           :availableImages="availableImages"
           :displayedImages="displayedImages"
           :integratedGallery="true"

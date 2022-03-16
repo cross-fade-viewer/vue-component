@@ -1,12 +1,21 @@
 {
   "name": "@cross-fade-viewer/vue-component",
-  "version": "1.0.9",
+  "version": "1.0.16",
   "private": false,
-  "main": "dist/CrossFadeViewer.common.js",
+  "main": "dist/CrossFadeViewer.umd.js",
+  "module": "dist/CrossFadeViewer.common.js",
+  "unpkg": "dist/CrossFadeViewer.umd.min.js",
+  "browser": {
+    "./sfc": "src/cross-fade-viewer/cross-fade-viewer.vue"
+  },
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.ts",
     "build": "vue-cli-service build",
-    "build-package": "vue-cli-service build --target lib --name CrossFadeViewer ./src/crossfade-image-viewer/crossfade-image-viewer.vue",
+    "build-package": "vue-cli-service build --target lib --name CrossFadeViewer ./src/cross-fade-viewer/cross-fade-viewer.vue",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
