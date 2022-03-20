@@ -1,10 +1,12 @@
+![cross-fade-image-viewer-header](images/header.png)
+
 # cross-fade-viewer (Vue Component)
 
 The Cross Fade Viewer Vue Component is an interactive image tool based on [OpenSeaDragon](https://openseadragon.github.io/) and [Vue](https://vuejs.org/), which allows users to choose images from a gallery and change their opacity in an overlayed view.
 
 ## Prerequisites
-To be able to use the component in your own project you need to have a [Vue](https://vuejs.org/)-Application set up, where you can import it.
-This requires the [Vue.js](https://awesomejs.dev/for/vue/pkg/245043713989935618/) library as a dependency.
+
+To use the component you need to have a [Vue](https://vuejs.org/)-Project set up, where you can import it. This requires the [Vue.js](https://awesomejs.dev/for/vue/pkg/245043713989935618/) library as a dependency.
 
 ## Installation
 
@@ -23,7 +25,9 @@ import CrossFadeViewer from '@cross-fade-viewer/vue-component';
 Add the viewer by referencing its tag name in the template area of your ``.vue`` file.
 ```html
 <template>
+  ...
   <cross-fade-viewer \>
+  ...
 </template>
 ```
 
@@ -56,6 +60,7 @@ You can choose between 5 different color schemes. Take a look at the screenshots
 
 ### base
 A dark color scheme used as a basic theme.
+![](images/theme-base.png)
 
 ### cool
 A dark blue theme.
