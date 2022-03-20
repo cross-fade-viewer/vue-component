@@ -1,3 +1,5 @@
+![cross-fade-image-viewer-header](images/header.png)
+
 # cross-fade-viewer (Vue Component)
 
 The Cross Fade Viewer Vue Component is an interactive image tool based on [OpenSeaDragon](https://openseadragon.github.io/) and [Vue](https://vuejs.org/), which allows users to choose images from a gallery and change their opacity in an overlayed view.
